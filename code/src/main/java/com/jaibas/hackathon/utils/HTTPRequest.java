@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.net.URI;
 
-public class Request {
+public class HTTPRequest {
   private static String prefix = "https://gb04ac592cc4c15-dbahackathon2024.adb.us-phoenix-1.oraclecloudapps.com/ords/admin/";
 
   public static JsonArray get(String query) throws Exception {
