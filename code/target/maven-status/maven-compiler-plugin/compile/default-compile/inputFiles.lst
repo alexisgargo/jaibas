@@ -1,4 +1,5 @@
-/Users/alexisgarcia/Downloads/hackathon/src/main/java/com/jaibas/hackathon/HackathonApplication.java
-/Users/alexisgarcia/Downloads/hackathon/src/main/java/com/jaibas/hackathon/ServletInitializer.java
-/Users/alexisgarcia/Downloads/hackathon/src/main/java/com/jaibas/hackathon/controller/TestController.java
-/Users/alexisgarcia/Downloads/hackathon/src/main/java/com/jaibas/hackathon/service/TestService.java
+/Users/alexisgarcia/Documents/tests/hackathon-2024/jaibas/code/src/main/java/com/jaibas/hackathon/HackathonApplication.java
+/Users/alexisgarcia/Documents/tests/hackathon-2024/jaibas/code/src/main/java/com/jaibas/hackathon/ServletInitializer.java
+/Users/alexisgarcia/Documents/tests/hackathon-2024/jaibas/code/src/main/java/com/jaibas/hackathon/controller/ImageController.java
+/Users/alexisgarcia/Documents/tests/hackathon-2024/jaibas/code/src/main/java/com/jaibas/hackathon/service/ImageService.java
+/Users/alexisgarcia/Documents/tests/hackathon-2024/jaibas/code/src/main/java/com/jaibas/hackathon/utils/HTTPRequest.java

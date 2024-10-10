@@ -17,22 +17,21 @@ import jakarta.json.stream.JsonParser.Event;
 @Service
 public class ImageService {
     private Path imageDir = Paths.get("/tmp/image");
-    private final Path pythonDir = Paths.get("/tmp/final");
+    private final Path pythonDir = Paths.get("/opt/final");
 
     private final String imageName = "currentImage.jpg";
-
 
     public JsonObject getResponse(MultipartFile file) throws Exception {
         File image = new File(imageDir + "/" + imageName);
         file.transferTo(image);
-        
+
         Process pythonScript = Runtime.getRuntime().exec("python3 " + pythonDir + "/predict_image.py");
         int exitCode = pythonScript.waitFor();
 
-        if (exitCode != 0){
+        if (exitCode != 0) {
             throw new Exception();
         }
-        
+
         Path output = pythonDir.resolve("out/result.json");
         String pythonResponse = Files.readString(output);
 
@@ -40,7 +39,7 @@ public class ImageService {
         JsonParser jsonParser = Json.createParser(reader);
 
         Event event;
-        
+
         JsonObjectBuilder builder = Json.createBuilderFactory(null).createObjectBuilder();
         while (jsonParser.hasNext()) {
             event = jsonParser.next();
@@ -55,9 +54,9 @@ public class ImageService {
                 default:
                     break;
             }
-        } 
-        
-        if (!image.delete()) {            
+        }
+
+        if (!image.delete()) {
             throw new Exception();
         }
 
