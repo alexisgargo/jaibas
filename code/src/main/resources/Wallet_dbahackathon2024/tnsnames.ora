@@ -1,0 +1,8 @@
+dbahackathon2024_high = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=gb04ac592cc4c15_dbahackathon2024_high.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+dbahackathon2024_low = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=gb04ac592cc4c15_dbahackathon2024_low.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+dbahackathon2024_medium = (description= (retry_count=20)(retry_delay=3)(address=(protocol=tcps)(port=1522)(host=adb.us-phoenix-1.oraclecloud.com))(connect_data=(service_name=gb04ac592cc4c15_dbahackathon2024_medium.adb.oraclecloud.com))(security=(ssl_server_dn_match=yes)))
+
+
+
